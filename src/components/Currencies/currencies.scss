@@ -1,0 +1,37 @@
+@import 'src/styles/vars';
+
+.currencies {
+  text-align: left;
+  max-height: 350px;
+  overflow-y: auto;
+
+  .currencies-search {
+    padding: $gutter;
+    margin-top: $gutter;
+    border: none;
+    width: 100%;
+    color: $mainColor;
+    font-size: 1.2em;
+
+    &::placeholder {
+      color: $altColor;
+    }
+  }
+
+  .currency {
+    border-top: 1px solid $altColor;
+    padding: $gutter;
+    font-weight: $fwMedium;
+    cursor: pointer;
+
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+    // quand la propriété CSS indiquée change, la nouvelle valeur est prise en
+    // compte progressivement
+    transition: background-color $transitionSlow;
+
+    &:hover {
+      background-color: $altColor;
+      transition: background-color $transitionFast;
+    }
+  }
+}

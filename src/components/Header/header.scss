@@ -1,0 +1,23 @@
+@import 'src/styles/vars';
+
+.header {
+    background-color: $mainColor;
+    color: $lightColor;
+    padding: $gutter * 2;
+
+  .header-title {
+    font-weight: $fwBold;
+    font-size: 2em;
+  }
+
+  .header-amount {
+    margin-top: $gutter;
+  }
+
+  .header-input {
+    background-color: $altColor;
+    margin-top: $gutter;
+    height: 2rem;
+    padding-left: 1rem;
+  }
+}

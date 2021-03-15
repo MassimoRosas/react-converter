@@ -1,0 +1,15 @@
+@import 'src/styles/vars';
+
+.amount {
+  padding: $gutter * 2;
+
+  .amount-value {
+    font-weight: $fwBold;
+    font-size: 2em;
+  }
+
+  .amount-currency {
+    font-size: 1.3em;
+    margin-top: $gutter;
+  }
+}

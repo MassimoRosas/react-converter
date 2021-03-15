@@ -1,0 +1,21 @@
+@import 'src/styles/vars';
+
+.custom-button {
+  width: 50px;
+  height: 50px;
+  border: 4px solid $mainColor;
+  border-radius: 50%;
+  background-color: $lightColor;
+  font-size: 2em;
+  color: $mainColor;
+  margin-top: -25px;
+
+  &:hover {
+    color: $lightColor;
+    background-color: $mainColor;
+  }
+
+  &--open {
+    transform: rotate(90deg);
+  }
+}
